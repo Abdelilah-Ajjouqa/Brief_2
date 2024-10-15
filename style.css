@@ -1,0 +1,30 @@
+/* html {
+    background-image:url(./img/Rectangle\ 10.png);
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(4, 100px);
+}
+
+h3 {
+    color: #E9BD8C;
+} */
+
+#Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #1ab31a;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar li a:hover,
+#navbar li .active{
+    color: var(--primary-color);
+}
