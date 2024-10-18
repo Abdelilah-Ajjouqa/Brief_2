@@ -1,0 +1,86 @@
+.para1 {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: 25rem;
+    padding-top: 64px;
+}
+
+.para1 p {
+    position: relative;
+    width: 37rem;
+    padding-top: 25px;
+    padding-left: 16px;
+}
+
+.para1 .photo1 {
+    background-image: url(./img/Service/background\ 1.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18rem;
+    position: relative;
+    left: 1px;
+}
+
+.para1 .photo0 {
+    background-image: url(./img/Service/Earl\ Grey\ Cupcakes\ with\ Salted\ Caramel\ Buttercream\ -\ Food\ Duchess.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18rem;
+    position: relative;
+    left: 10px;
+}
+
+.para1 .photo3 {
+    background-image: url(./img/Service/NYC\ Guide_\ Ladurée\ Soho\ -\ York\ Avenue.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15rem;
+    position: relative;
+    left: 20px;
+}
+
+.para1 h4 {
+    position: relative;
+    font-size: xx-large;
+    left: 41px;
+    color: sienna;
+}
+
+.para2 {
+    display: flex;
+    position: relative;
+    height: 38rem;
+    /* top: 70px; */
+}
+
+.para2 h4 {
+    position: relative;
+    font-size: xx-large;
+    left: 41px;
+    top: 5rem;
+    color: sienna;
+}
+
+.para2 p {
+    position: relative;
+    text-align: center;
+    width: 41rem;
+    height: 9rem;
+    padding-top: 126px;
+    padding-left: 40px;
+}
+
+.para2 .photo2 {
+    background-image: url(./img/Service/31\ Best\ Desserts\ in\ Paris\ to\ Try\ in\ 2022.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21rem;
+    top: 4rem;
+    position: relative;
+    left: 8rem;
+}

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap'); */
-
 
 * {                             /*ce style est apliqué sur tout le code*/
     margin: 0;
@@ -152,22 +150,12 @@ h3 {
     top: 50px;
 }
 
-article {
-    /* width: auto; */
-    /* height: auto; */
-}
-
 .first_order {
     background-image: url(./img/Rectangle\ 45.png);
     height: 50vh;
     background-repeat: no-repeat;
     background-size: 100%;
-    /* background-attachment: fixed; */
-    /* width: 50rem; */
     position: sticky;
-    /* left: 20rem; */
-    /* top: 9rem; */
-    /* padding: 15px; */
     margin-top: 76px;
     margin-left: 15rem;
     width: 65rem;
@@ -212,7 +200,7 @@ article {
     
     padding-top: 14px;
 }
-
+/* Top Products */
 .products {
     display: flex;
     flex-direction: row;
@@ -236,7 +224,6 @@ article {
     position: relative;
     left: 25px;
 }
-
 
 .food-01 p.number {
     color: white;
@@ -287,8 +274,218 @@ article {
     left: 19rem;
     bottom: 33px;
 }
-
-/* .les_choix {
+/* Explore More */
+.les_choix {
     display: flex;
     flex-direction: row;
-} */
+    justify-content: space-evenly;
+    position: relative;
+    top: 6rem;
+}
+
+.les_choix p{
+    font-size: var(--primary-font-size);
+    font-family: var(--Poppins-font-family);
+    text-align: center;
+    color: #5D5D5D;
+    border-bottom: black solid 3px;
+}
+
+.explore_more_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    /* padding-block: 50px; */
+    height: 60px;
+}
+
+.explore_more_items div {
+    position: relative;
+    top: 10rem;
+    width: 25rem;
+    height: 53vh;
+}
+/* Featured Treats */
+.last_title {
+    position: relative;
+    top: 60rem;
+}
+
+.les_3_images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 65rem;
+    justify-content: space-evenly;
+}
+
+.last {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    top: 67rem;
+    justify-content: space-around;
+    
+    font-size: var(--primary-font-size);
+    font-family: var(--Inter-font-family); 
+    bottom: 10px;
+}
+
+.last div:first-child {
+    position: relative;
+    left: 25px;
+}
+
+.last div:nth-child(2) {
+    position: relative;
+    right: 5px;
+}
+
+.last div:last-child {
+    position: relative;
+    right: 25px;
+}
+/* ************  footer ************** */
+.foter {
+    background-image: url(./img/Footer/Background01.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.llogo {
+    position: relative;
+    width: 120px;
+    top: 24px;
+    left: 24px;
+}
+
+.social-media .SS{
+    background-image: url(./img/Footer/Group\ 504.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 266px;
+    height: 28px;
+    left: 62rem;
+    bottom: -8px;
+}
+
+.abaout p:first-child {
+    font-family: var(--Inter-font-family);
+    color: var(--primary-color);
+    font-size: x-large;
+
+    position: relative;
+    width: 116px;
+    top: 15rem;
+    left: 6rem;
+}
+
+.abaout p:last-child {
+    font-family: var(--Inter-font-family);
+    color: white;
+    font-size: x-large;
+
+    position: relative;
+    width: 219px;
+    top: 16rem;
+    left: 4rem;
+}
+
+.explore .Ex {
+    font-family: var(--Inter-font-family);
+    color: var(--primary-color);
+    font-size: x-large;
+
+    position: relative;
+    width: 140px;
+    top: 6rem;
+    left: 33rem;
+}
+
+.explore .last-b {
+    font-family: var(--Inter-font-family);
+    color: white;
+    font-size: x-large;
+
+    position: relative;
+    width: 140px;
+    top: 7rem;
+    left: 33rem;    
+}
+
+.News .Titre {
+    font-family: var(--Inter-font-family);
+    color: var(--primary-color);
+    font-size: x-large;
+
+    position: relative;
+    width: 150px;
+    top: -3rem;
+    left: 62rem;
+}
+
+.News .ne {
+    background-image: url(./img/Footer/last1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 62px;
+    left: 62rem;
+    width: 93px;
+    bottom: 25px;
+}
+
+.ne p:first-child {
+    color: var(--primary-color);
+}
+
+.ne p:last-child {
+    color: white;
+}
+
+.ne p {
+    position: relative;
+    font-size: 18px;
+    left: 97px;
+    top: 3px;
+    width: 127px;
+}
+
+/* *********************************************** */
+.News .ne2 {
+    background-image: url(./img/Footer/last1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 62px;
+    left: 62rem;
+    width: 93px;
+    bottom: -8xpx;
+}
+
+.ne2 p:first-child {
+    color: var(--primary-color);
+}
+
+.ne2 p:last-child {
+    color: white;
+}
+
+.ne2 p {
+    position: relative;
+    font-size: 18px;
+    left: 97px;
+    top: 3px;
+    width: 127px;
+}
+
+.FF {
+    position: relative;
+    top: 70rem;
+}
