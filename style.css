@@ -1,29 +1,294 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap'); */
+
+
+* {                             /*ce style est apliqué sur tout le code*/
+    margin: 0;
+    padding: 0;
+}
+
+:root {                         /*you can call it with : var(...)*/
+    --Poppins-font-family: 'Poppins';
+    --Inter-font-family: 'Inter';
+    --Sansita-font-family: 'Sansita Swashed';
+    --primary-color: #E9BD8C;
+    --primary-font-size: 24px;
+}
+
+a {
+    text-decoration: none;      /*pour effacer li ligne ce-deucous à les mots*/
+    color: white;
+}
+
+ul {                            /*ce style pour effacer les points qui à coté de les mots*/
+    list-style: none;
+}
+
+.container {
     background-image: url(./img/Rectangle\ 10.png);
+    height: 100vh;              /*s'appelle "View hight", il rendre l'image compatible avec la page == متناسبة مع قياسات الصفحة*/
+    background-position: center;
     background-size: cover;
 }
-
-span {
-    display: inline;
+ 
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
     position: relative;
-    padding: 5px;
-    margin: 150px;
-    left: 100px;
-    bottom: 50px;
-    border: solid 2px;
+    left: -11rem;
+    color: rgb(242, 242, 241);
+    font-size: large;
+    font-family: var(--Poppins-font-family);
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 45px;
+    margin-left: 45px;
+  
+    position: relative;
+    top: 45px;
+    right: 15rem;
+}
+
+.logo-style {
+    position: relative;
+    left: 3rem;
+    top: 10px;
+}
+
+.menu a {
+    font-size: 22px;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.Section1 h4 {
+    position: relative;
+    font-family: var(--Inter-font-family);
+    color: var(--primary-color);
+    font-size: var(--primary-font-size);
+    top: 9rem;
+    left: 53px;
+    inline-size: 164px;
+}
+
+.Section1 h3 {
+    position: relative;
+    font-family: var(--Sansita-font-family);
+    color: white;
+    font-size: var(--primary-font-size);
+    top: 9rem;
+    left: 36px;
+    font-size: 74px;
+    inline-size: 29rem;
+}
+
+.Section1 {
+    width: 100px;
+}
+
+.button{
+    color: aliceblue;
+    background-color: #933C24;
+    font-size: var(--primary-font-size);
+    font-family: var(--Poppins-font-family);
+    
+
+    padding: 11px 30px;
+    border-radius: 8px;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left: 5rem;
+    top: 12rem;
+    width: 5rem;
+    height: 29px;
+
+    p {
+        position: relative;
+        bottom: 4px;
+    }
+}
+
+.learn_more p {
+    color: #E9BD8C;
+    font-family: var(--Inter-font-family);
+    font-size: var(--primary-font-size);
+    position: relative;
+    left: 15rem;
+    top: 151px;
+    inline-size: 135px;
+}
+
+/* *********Menu page********** */
+
+.Section2 h3{
+    position: relative;
+    font-family: var(--Sansita-font-family);
+    color: white;
+    font-size: var(--primary-font-size);
+    top: 9rem;
+    left: 5rem;
+    font-size: 6rem;
+    inline-size: 13rem;
+}
+
+h3 {
+    font-size: 70px;
+    font-family: var(--Sansita-font-family);
+    
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+article {
+    /* width: auto; */
+    /* height: auto; */
+}
+
+.first_order {
+    background-image: url(./img/Rectangle\ 45.png);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-attachment: fixed; */
+    /* width: 50rem; */
+    position: sticky;
+    /* left: 20rem; */
+    /* top: 9rem; */
+    /* padding: 15px; */
+    margin-top: 76px;
+    margin-left: 15rem;
+    width: 65rem;
+}
+
+.first_order h4 {
+    font-size: 33px;
+    font-family: var(--Sansita-font-family);
+    color: #933C24;
+    width: 13rem;
+    /* position: relative; */
+    padding-left: 25rem;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.first_order p {
+    position: relative;
+    text-align: center;
+    font-size: var(--primary-font-size);
+    font-family: var(--Inter-font-family);
+
+    margin-top: 24px;
+    margin-left: 19rem;
+    width: 24rem;
+}
+
+.bottom_learn_more  {
+    position: relative;
+    font-size: var(--primary-font-size);
+    font-family: var(--Inter-font-family);
+
+    display: flex;
+    width: 10rem;
+    height: 50px;
+    justify-content: center;
+    bottom: 8rem;
+    left: 41rem;
+    background-color: #933C24;
+    border: solid 1px;
+    border-radius: 10px;
+    
+    padding-top: 14px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    padding-block: 50px;
+}
+
+.products div {
+    background-image: url(./img/Mini-Rectangle.png);
+    height: 66vh;
+    background-repeat: no-repeat;
+    width: 28rem;
+}
+
+.food-01 input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 25px;
+}
+
+
+.food-01 p.number {
+    color: white;
+    font-size: 31px;
+    font-family: var(--Inter-font-family);
+    padding-left: 58px;
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.food-01 .i {
+    color: white;
+    font-size: 31px;
+    font-family: var(--Inter-font-family);
+    position: relative;
+    left: 20rem;
+    bottom: 37px;
+    text-align: center;
+    border-radius: 84px;
+    width: 38px;
+    border: solid white 2px;
+}
+
+.food-01 .text {
+    font-size: var(--primary-font-size);
+    font-family: var(--Inter-font-family);
+    color: white;
+
+    position: relative;
+    left: 31px;
+    top: 12px;
+    width: 134px;
+}
+
+.food-01 .boton {
+    width: 58px;
+    height: 26px;
+    padding-top: 5px;
+    font-size: 18px;
+    color: white;
+    font-family: var(--Inter-font-family);
+    text-align: center;
+    background-color: #933C24;
+    border: solid 1px #933C24;
     border-radius: 4px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    /* color: rgb(203, 149, 79); */
-    color: blue;
-}
-
-#logo-style {
     position: relative;
-    top: 16px;
+    left: 19rem;
+    bottom: 33px;
 }
 
-.Titre {
-    color: aqua;
-    background-color: aqua;
-}
+/* .les_choix {
+    display: flex;
+    flex-direction: row;
+} */
